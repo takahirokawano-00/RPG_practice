@@ -1,6 +1,6 @@
 
 public class Hoge {
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		Character c = new Character();
 
 		c.hp = 1200;
