@@ -1,10 +1,19 @@
-
 public class Character {
+	String name;
 	int hp;
 	int mp;
-	String name;
+
+	Character(String name, int hp, int mp){
+		this.name = name;
+		this.hp = hp;
+		this.mp = mp;
+	}
 
 	public void introduce() {
-		System.out.println("私の名前は"+name+",hpは"+hp+",mpは"+mp+"だ！");
+		System.out.println("私の名前は"+this.name+",HPは"+this.hp+",MPは"+this.mp+"だ！");
+	}
+
+	public void damage() {
+
 	}
 }
