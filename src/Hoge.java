@@ -11,5 +11,7 @@ public class Hoge {
 		c3.introduce();
 		c4.introduce();
 		c5.introduce();
+
+		c3.attack(c2);
 	}
 }
