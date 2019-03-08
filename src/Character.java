@@ -13,9 +13,9 @@ public class Character {
 		System.out.println("私の名前は"+this.name+",HPは"+this.hp+",MPは"+this.mp+"だ！");
 	}
 
-	public void damage(int mp) {
-		System.out.println(this.name+"は"+mp+"ポイントのダメージを受けた");
-		this.hp -= mp;
+	public void damage(int damage) {
+		System.out.println(this.name+"は"+damage+"ポイントのダメージを受けた");
+		this.hp -= damage;
 		System.out.println(this.name+"のHPが"+this.hp+"になった");
 	}
 
