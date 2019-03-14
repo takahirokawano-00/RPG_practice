@@ -1,7 +1,7 @@
 public class Character {
-	private String name;
-	private int hp;
-	private int mp;
+	protected String name;
+	protected int hp;
+	protected int mp;
 
 	Character(String name, int hp, int mp){
 		this.name = name;
