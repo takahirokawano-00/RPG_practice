@@ -1,22 +1,29 @@
 public class Character {
-	private String name;
-	private int hp;
-	private int mp;
+	protected String name;
+	protected int hp;
+	protected int mp;
+	protected int sp;
 
-	Character(String name, int hp, int mp){
+	Character(String name, int hp, int mp, int sp){
 		this.name = name;
 		this.hp = hp;
 		this.mp = mp;
+		this.sp = sp;
 	}
 
 	public void introduce() {
-		System.out.println("私の名前は"+this.name+",HPは"+this.hp+",MPは"+this.mp+"だ！");
+		System.out.println("私の名前は"+this.name+"だ！"+" HP："+this.hp+" MP："+this.mp+" SP："+this.sp);
 	}
 
 	public void damage(int damage) {
-		System.out.println(this.name+"は"+damage+"ポイントのダメージを受けた");
-		this.hp -= damage;
-		System.out.println(this.name+"のHPが"+this.hp+"になった");
+		System.out.println(this.name+"は"+damage+"ポイントのダメージを受けた。");
+		if(this.hp<damage) {
+			System.out.println(this.name+"のHPが0になった。");
+			System.out.println(this.name+"は倒れた...");
+		}else{
+			this.hp -= damage;
+			System.out.println(this.name+"のHPが"+this.hp+"になった。");
+		}
 	}
 
 	public void attack(Character character) {
