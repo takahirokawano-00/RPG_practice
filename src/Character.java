@@ -16,13 +16,18 @@ public class Character {
 	}
 
 	public void damage(int damage) {
-		System.out.println(this.name+"は"+damage+"ポイントのダメージを受けた。");
-		if(this.hp<damage) {
-			System.out.println(this.name+"のHPが0になった。");
-			System.out.println(this.name+"は倒れた...");
+		if(this.hp <= 0) {
+			System.out.println(this.name+"は既に倒れている");
 		}else{
-			this.hp -= damage;
-			System.out.println(this.name+"のHPが"+this.hp+"になった。");
+			System.out.println(this.name+"は"+damage+"ポイントのダメージを受けた。");
+			if(this.hp<damage) {
+				this.hp -= damage;
+				System.out.println(this.name+"のHPが【0】になった。");
+				System.out.println(this.name+"は倒れた...");
+			}else{
+				this.hp -= damage;
+				System.out.println(this.name+"のHPが【"+this.hp+"】になった。");
+			}
 		}
 	}
 

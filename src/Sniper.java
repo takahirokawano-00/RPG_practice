@@ -8,7 +8,6 @@ public class Sniper extends Character {
 	}
 
 	public void shot(String name) {
-		System.out.println("狙撃兵の"+this.name+"が現れた！");
 		System.out.println("「"+name+"このやろう-！」");
 		System.out.println(this.name+"は"+name+"を撃った！");
 	}
