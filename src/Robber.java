@@ -8,7 +8,6 @@ public class Robber extends Character {
 	}
 
 	public void rob(String name) {
-		System.out.println("強盗の"+this.name+"が現れた！");
 		System.out.println("「"+name+"のものは私のもの、私のものは私のものだ！」");
 		System.out.println(this.name+"は"+name+"を馬乗りで攻撃し、現金を奪った！");
 	}
