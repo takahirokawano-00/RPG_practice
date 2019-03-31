@@ -3,7 +3,8 @@ public class Robber extends Character {
 		super(name, hp, mp, sp);
 	}
 
-	public void introduce() {
+	@Override
+	void introduce() {
 		System.out.println("私は強盗の"+this.name+"だ！"+" HP："+this.hp+" MP："+this.mp+" SP："+this.sp);
 	}
 
