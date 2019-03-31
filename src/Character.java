@@ -1,4 +1,4 @@
-public class Character {
+public abstract class Character {
 	protected String name;
 	protected int hp;
 	protected int mp;
@@ -31,8 +31,5 @@ public class Character {
 		}
 	}
 
-	public void attack(Character character) {
-		System.out.println(this.name+"の攻撃!");
-		character.damage(this.mp);
-	}
+	abstract void attack(Character character);
 }

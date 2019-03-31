@@ -12,8 +12,10 @@ public class Sniper extends Character {
 		System.out.println(this.name+"は"+name+"を撃った！");
 	}
 
-	public void attack(Character character) {
+	@Override
+	void attack(Character character) {
 		shot(character.name);
 		character.damage(this.sp);
 	}
+
 }

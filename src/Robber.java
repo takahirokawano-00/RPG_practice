@@ -12,7 +12,8 @@ public class Robber extends Character {
 		System.out.println(this.name+"は"+name+"を馬乗りで攻撃し、現金を奪った！");
 	}
 
-	public void attack(Character character) {
+	@Override
+	void attack(Character character) {
 		rob(character.name);
 		character.damage(this.sp);
 	}

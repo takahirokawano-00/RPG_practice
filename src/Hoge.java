@@ -1,14 +1,14 @@
 public class Hoge {
 	public static void main(String[] args) {
 		Character teamA[] = new Character[3];
-		teamA[0] = new Character("ドラえもん", 2800, 600, 400);
+		teamA[0] = new Robber("ドラえもん", 2800, 600, 400);
 		teamA[1] = new Sniper("のび太", 1600, 430, 800);
-		teamA[2] = new Character("しずか", 600, 250, 200);
+		teamA[2] = new Robber("しずか", 600, 250, 200);
 
 		Character teamB[] = new Character[3];
 		teamB[0] = new Robber("ジャイアン", 4500, 1000, 620);
-		teamB[1] = new Character("スネ夫", 1200, 400, 300);
-		teamB[2] = new Character("出木杉", 2600, 580, 700);
+		teamB[1] = new Sniper("スネ夫", 1200, 400, 300);
+		teamB[2] = new Sniper("出木杉", 2600, 580, 700);
 
 		int value1 = (int)(Math.random()*3);
 		int value2 = (int)(Math.random()*3);
