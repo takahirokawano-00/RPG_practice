@@ -11,7 +11,9 @@ public abstract class Character {
 		this.sp = sp;
 	}
 
-	abstract void introduce();
+	public void introduce() {
+		System.out.println("私の名前は"+this.name+"だ！"+" HP："+this.hp+" MP："+this.mp+" SP："+this.sp);
+	}
 
 	public void damage(int damage) {
 		if(this.hp <= 0) {
