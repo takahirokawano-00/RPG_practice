@@ -1,4 +1,4 @@
-public class Sniper extends Character {
+public class Sniper extends Character implements Movable {
 	Sniper(String name, int hp, int mp, int sp){
 		super(name, hp, mp, sp);
 	}
@@ -14,7 +14,7 @@ public class Sniper extends Character {
 	}
 
 	@Override
-	void attack(Character character) {
+	public void attack(Character character) {
 		shot(character.name);
 		character.damage(this.sp);
 	}

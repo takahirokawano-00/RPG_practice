@@ -1,4 +1,4 @@
-public abstract class Character {
+public abstract class Character implements Movable {
 	protected String name;
 	protected int hp;
 	protected int mp;
@@ -31,5 +31,9 @@ public abstract class Character {
 		}
 	}
 
-	abstract void attack(Character character);
+	public abstract void attack(Character character);
+
+	public void move(Character terget) {
+		attack(terget);
+	}
 }
