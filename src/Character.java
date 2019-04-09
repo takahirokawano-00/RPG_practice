@@ -1,4 +1,4 @@
-public abstract class Character implements Movable {
+public abstract class Character{
 	protected String name;
 	protected int hp;
 	protected int mp;

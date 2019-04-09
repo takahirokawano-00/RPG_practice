@@ -25,8 +25,5 @@ public class Hoge {
 			teamB[i].move((Character)teamA[value2]);
 			System.out.println("--------------------------------------------");
 		}
-
-
-
 	}
 }
