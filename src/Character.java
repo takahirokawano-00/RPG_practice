@@ -32,8 +32,4 @@ public abstract class Character implements Movable {
 	}
 
 	public abstract void attack(Character character);
-
-	public void move(Character terget) {
-		attack(terget);
-	}
 }

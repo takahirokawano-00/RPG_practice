@@ -18,4 +18,9 @@ public class Robber extends Character implements Movable{
 		rob(character.name);
 		character.damage(this.sp);
 	}
+
+	@Override
+	public void move(Character target) {
+		attack(target);
+	}
 }
