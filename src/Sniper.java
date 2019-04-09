@@ -19,4 +19,9 @@ public class Sniper extends Character implements Movable {
 		character.damage(this.sp);
 	}
 
+	@Override
+	public void move(Character target) {
+		attack(target);
+	}
+
 }

@@ -1,21 +1,10 @@
 public class Currypanman implements Movable{
-	protected String name;
-	protected int hp;
-	protected int mp;
-	protected int sp;
-
-	Currypanman(String name, int hp, int mp, int sp){
-		this.name = name;
-		this.hp = hp;
-		this.mp = mp;
-		this.sp = sp;
-	}
-
 	public void introduce() {
-		System.out.println(this.name+"参上！"+" HP："+this.hp+" MP："+this.mp+" SP："+this.sp);
+		System.out.println("僕が噂のカレーパンマンだ！");
 	}
 
-	public void move(Character terget) {
+	@Override
+	public void move(Character target) {
 		System.out.println("カレービーム発射！");
 	}
 }
