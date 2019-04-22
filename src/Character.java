@@ -11,6 +11,10 @@ public abstract class Character{
 		this.sp = sp;
 	}
 
+	int getHp() {
+		return hp;
+	}
+
 	public void introduce() {
 		System.out.println("私の名前は"+this.name+"だ！"+" HP："+this.hp+" MP："+this.mp+" SP："+this.sp);
 	}
