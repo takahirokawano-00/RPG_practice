@@ -1,4 +1,4 @@
-public abstract class Character implements Movable {
+public abstract class Character{
 	protected String name;
 	protected int hp;
 	protected int mp;
@@ -9,6 +9,10 @@ public abstract class Character implements Movable {
 		this.hp = hp;
 		this.mp = mp;
 		this.sp = sp;
+	}
+
+	int getHp() {
+		return hp;
 	}
 
 	public void introduce() {
