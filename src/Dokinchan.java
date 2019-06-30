@@ -3,7 +3,7 @@ public class Dokinchan implements Movable {
 		System.out.println("ドキンちゃんとは、私のことよ!");
 	}
 	@Override
-	public void move(Character terget) {
+	public void move(Character target) {
 		System.out.println("ドキンちゃんはしょくぱんまんを探している。");
 	}
 }
